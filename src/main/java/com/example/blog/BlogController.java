@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class BlogController {
-    @RequestMapping("/")
+    @RequestMapping("/home")
     public String index() {
         return "home";
     }
@@ -15,14 +15,14 @@ public class BlogController {
         return "about";
     }
 
-    @RequestMapping("/blog")
-    public String blog() {
-        return "blog";
-    }
-
     @RequestMapping("/author")
     public String author() {
         return "author";
+    }
+
+    @RequestMapping("/blog")
+    public String blog() {
+        return "blog";
     }
 
     @RequestMapping("/corejava")
@@ -30,14 +30,18 @@ public class BlogController {
         return "corejava";
     }
 
-    @RequestMapping("/oop")
-    public String oop() {
-        return "oop";
+    @RequestMapping("/github")
+    public String github() {
+        return "github";
     }
-
     @RequestMapping("/htmlcssjs")
     public String htmlcssjs() {
         return "htmlcssjs";
+    }
+
+    @RequestMapping("/oop")
+    public String oop() {
+        return "oop";
     }
 
 }
